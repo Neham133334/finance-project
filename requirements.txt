@@ -1,10 +1,11 @@
 streamlit==1.32.0
 yfinance==0.2.31
-pandas==2.1.4
+pandas==1.5.3  # Downgraded for compatibility
 plotly==5.18.0
 newsapi-python==0.2.7
 transformers==4.36.2
-torch==1.13.1+cpu --extra-index-url https://download.pytorch.org/whl/cpu
+torch==1.13.1 --extra-index-url https://download.pytorch.org/whl/cpu
 sentencepiece==0.1.99
 protobuf==3.20.3
-python-dotenv==1.0.0
+markdown-it-py==2.2.0  # Pinned to avoid conflicts
+rich==13.7.0  # Pinned to avoid conflicts
