@@ -8,7 +8,13 @@ from newsapi import NewsApiClient
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import base64
-
+# Force early dependency checks
+try:
+    import markdown_it
+    import rich
+    print(f"Dependency check passed: markdown-it-py {markdown_it.__version__}, rich {rich.__version__}")
+except ImportError as e:
+    st.error(f"Dependency error: {str(e)}")
 # Set page config
 st.set_page_config(
     page_title="ESG Analytics Dashboard",
