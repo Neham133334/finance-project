@@ -4,8 +4,7 @@ pandas==2.1.4
 plotly==5.18.0
 newsapi-python==0.2.7
 transformers==4.36.2
-torch==2.1.2+cpu --extra-index-url https://download.pytorch.org/whl/cpu
-sentencepiece==0.1.99  # Required for some tokenizers
-protobuf==3.20.3  # Required dependency
-matplotlib==3.8.2
+torch==1.13.1+cpu --extra-index-url https://download.pytorch.org/whl/cpu
+sentencepiece==0.1.99
+protobuf==3.20.3
 python-dotenv==1.0.0 
